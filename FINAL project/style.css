@@ -19,6 +19,12 @@ a {
     box-sizing: border-box;
 }
 
+.wrapper {
+    width: 940px;
+    margin: 50px auto;
+}
+
+
 .container {
     margin: 0 15%;
     display: flex;
@@ -294,3 +300,10 @@ h5 {
     margin: 60px 0;
     font-size: 3em;
 }
+
+
+
+
+    
+
+
