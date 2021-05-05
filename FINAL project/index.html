@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Happy Pet</title>
+    <script async src='smoothcscroll.js'></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css-media.css" type="text/css">
@@ -17,19 +18,18 @@
             <a class="logo">
                 <div class="logo-text">HP</div>
                 <img src="logo.png">
-
                 Happy Pet
             </a>
             <div class="menu">
                 <a href="index.html">Главная</a>
-                <a href="">О сервисе</a>
+                <a href="#serv">О сервисе</a>
                 <a href="https://www.donationalerts.com/r/happypet">Донат</a>
-                <a href="">Контакты</a>
+                <a href="#fotter">Контакты</a>
             </div>
             <div class="basket">
                 <img src="Vector.png" id="basket">
                 <img src="Ellipse1.png" id="circle">
-                <div class="sum">5100 тг</div>
+                <div class="sum">0 тг</div>
                 <div class="triangle-down"></div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 <div class="content">
                     <h1>Твой новый друг уже ждёт тебя</h1>
                     <h3>Онлайн магазин домашних животных</h3>
-                    <button class="btn">Выбрать друга</button>
+                    <button  class="btn"><a href="#cotalog">Выбрать друга</a></button>
                     <div class="enrollment">
                         <div> Emaill</div>
                         <input type="text" class="emaill" placeholder="Emaill">
@@ -63,7 +63,7 @@
             <!--INTRO INNER-->
         </div>
     </div>
-    <div class="catalog">
+    <div id="cotalog" class="catalog">
         <div class="container">
             <div class="inner">
                 <h2>Каталог животных</h2>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <h1>Почему выбирают нас?</h1>
-            <div class="flexbox">
+            <div id="serv" class="flexbox">
                 <div id="info"> <img src="track.png" id="icon">
                     <div class="each">
                         <div id="text">Их много</div>
@@ -145,7 +145,7 @@
             </div>
         </div>
     </div>
-    <div class="footer">
+    <div id="fotter" class="footer">
         <div class="container">
             <div class="inner">
                 <div class="flexbox">
