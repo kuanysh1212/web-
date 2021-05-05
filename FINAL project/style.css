@@ -306,7 +306,7 @@ h5 {
     background-color: #4FA193;
 }
 
-.media {
+.media{
     margin-top: 30px;
     width: 25%;
 }
@@ -315,9 +315,66 @@ h5 {
     font-size: 3em;
 }
 
+.razdel h1{
+    text-align: center;
+}
 
 
+.box{
+   background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.box .flexbox:first-child{
+    justify-content: flex-start;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+.box .flexbox{
+    align-items: center;
+
+}
+.box .flexbox .text:after {
+    display: block;
+    content: '';
+    background: #333;
+    width: 40px;
+    height: 2px;
+    margin-top: -10px;
+    margin-left: 70px;
+    margin-right: 10px;
+}
+.box .flexbox .text:last-child:after{ background:transparent;
+}
+.box .flexbox input{
+    border-radius: 15px;
+    height: 30px;
+    width: 80px;
+    background: transparent;
+    padding: 5px;
+}
+.line{
+    display: block;
+    content: '';
+    background: #555;
+    width: 40px;
+    height: 2px;
 
 
+}
+.box input{
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+    margin-right: 5px;
 
+}
+
+.razdel .card{
+    flex-basis: 0;
+    margin: 20px 20px;
+}
 
