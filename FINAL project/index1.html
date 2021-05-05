@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Собаки</title>
+    <script async src='javascr.js'></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css-media.css" type="text/css">
@@ -51,14 +52,16 @@
                     <input type="text" class="min" placeholder="до">
                     <h4>Сортировка по:</h4>
                     <h5>Цене</h5>
-                    <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+                    <button id="sort-asc">По возростанию</button>
+                    <button id="sort-desc">по убыванию</button>
                     <h5>Возрасту</h5>
-                    <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+                    <button id="sort-asc1">По возростанию</button>
+                    <button id="sort-desc1">по убыванию</button>
                 </div>
             </div>
 
-            <div class="cards">
-                <div class="card">
+            <div id="cards" class="cards">
+                <div class="card" data-prise="9200" data-year="4">
                         <div id="text">
                             <div><span>4</span> месяца</div>
                             <div>
@@ -72,11 +75,11 @@
                             выведенная в Великобритании в XIX веке</h5>
                         <h2>9200 тг</h2>
                     </div>
-                    <div class="card">
+                    <div class="card" data-prise="19000" data-year="9">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>9</span> месяца</div>
                             <div>
-                                Кобель
+                                Сука
                             </div>
                         </div>
 
@@ -85,9 +88,9 @@
                         <h5>Порода короткошёрстных служебных собак, выведенная в городе Апольда</h5>
                         <h2>19000 тг</h2>
                     </div>
-                    <div class="card">
+                    <div class="card" data-prise="27000" data-year="12">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>1</span> год</div>
                             <div>
                                 Кобель
                             </div>
@@ -96,13 +99,13 @@
                         <img src="3.png">
                         <h2>Хаски</h2>
                         <h5>Порода ездовых собак, выведенный на северных, которые отличаются быстрой манерой тянуть упряжку.</h5>
-                        <h2>7000 тг</h2>
+                        <h2>27000 тг</h2>
                     </div>
-                    <div class="card">
+                    <div class="card" data-prise="4700" data-year="2">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>2</span> месяца</div>
                             <div>
-                                Кобель
+                                Сука
                             </div>
                         </div>
 
@@ -111,11 +114,11 @@
                         <h5>Порода предназначенных для охоты на норных животных и борьбы с грызунами.</h5>
                         <h2>4700 тг</h2>
                     </div>
-                    <div class="card">
+                    <div class="card" data-prise="20000" data-year="24">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>2</span> года</div>
                             <div>
-                                Кобель
+                                Сука
                             </div>
                         </div>
 
@@ -124,9 +127,9 @@
                         <h5>Порода далматин - это хороший сторож и элегантный, приятный компаньон.</h5>
                         <h2>20000 тг</h2>
                     </div>
-                    <div class="card ">
+                    <div class="card " data-prise="7200" data-year="6">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>6</span> месяца</div>
                             <div>
                                 Кобель
                             </div>
@@ -135,11 +138,11 @@
                         <img src="6.png">
                         <h2>Такса</h2>
                         <h5>Порода охотничьих собак, отличающаяся короткими ногами. </h5>
-                        <h2>7000 тг</h2>
+                        <h2>7200 тг</h2>
                     </div>
-                     <div class="card ">
+                     <div class="card " data-prise="9700" data-year="2">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>2</span> месяца</div>
                             <div>
                                 Кобель
                             </div>
@@ -149,13 +152,13 @@
                         <h2>Мопс</h2>
                         <h5>Один из типов охотничьих собак,
                             выведенная в Великобритании в XIX веке</h5>
-                        <h2>7000 тг</h2>
+                        <h2>9700 тг</h2>
                     </div>
-                     <div class="card ">
+                     <div class="card " data-prise="32000" data-year="4">
                         <div id="text">
                             <div><span>4</span> месяца</div>
                             <div>
-                                Кобель
+                                Сука
                             </div>
                         </div>
 
@@ -163,11 +166,11 @@
                         <h2>Питбуль</h2>
                         <h5>Один из типов охотничьих собак,
                             выведенная в Великобритании в XIX веке</h5>
-                        <h2>7000 тг</h2>
+                        <h2>32000 тг</h2>
                     </div>
-                     <div class="card ">
+                     <div class="card " data-prise="6000" data-year="6">
                         <div id="text">
-                            <div><span>4</span> месяца</div>
+                            <div><span>6</span> месяца</div>
                             <div>
                                 Кобель
                             </div>
@@ -177,7 +180,7 @@
                         <h2>Чихуахуа</h2>
                         <h5>Один из типов охотничьих собак,
                             выведенная в Великобритании в XIX веке</h5>
-                        <h2>7000 тг</h2>
+                        <h2>6000 тг</h2>
                     </div>
 
 
