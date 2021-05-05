@@ -42,11 +42,16 @@ a {
     margin-top: 17px;
 }
 
-.menu {
+.menu a{
     font-weight: 400;
     font-size: 18px;
     line-height: 29px;
+    transition: .2s;
 }
+.menu a:hover{
+    font-weight: 500;
+}
+
 
 .logo {
     position: relative;
@@ -129,6 +134,10 @@ h3 {
     border: none;
     border-radius: 35px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    transition: .3s;
+}
+button:hover{
+    background: #B5FF10;
 }
 
 .enrollment {
@@ -204,10 +213,15 @@ h3 {
 .card {
     width: 220px;
     padding: 15px 15px;
-    background: #5AAA97;
+    background: rgba(255,255,255,0.5);
     border-radius: 30px;
     margin-bottom: 50px;
     flex-basis: 20%;
+    transition: .3s;
+}
+.card:hover{
+     background: #5AAA97;
+
 }
 
 h5 {
@@ -304,6 +318,6 @@ h5 {
 
 
 
-    
+
 
 
