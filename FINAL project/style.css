@@ -377,4 +377,25 @@ input[type=number]::-webkit-outer-spin-button {
     flex-basis: 0;
     margin: 20px 20px;
 }
+#slidbtn{
+    background-color: #4FA193;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.slider {
+    
+    max-height: 20%;
+    max-width: 40%;
+    
+    margin: 20px auto;
+    overflow: hidden;
+}
 
+.slider-line {
+    width: 1024px;
+    display: flex;
+    background: orange;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
