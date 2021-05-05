@@ -181,7 +181,7 @@ h3 {
 }
 
 .cards {
-    text-align: start;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
